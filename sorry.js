@@ -19,7 +19,6 @@ const volumeControl = document.getElementById('volumeControl');
 
 bgMusic.volume = 0.5;
 
-// ON / OFF BUTTON
 musicToggle.addEventListener('click', () => {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -30,18 +29,16 @@ musicToggle.addEventListener('click', () => {
     }
 });
 
-// VOLUME CONTROL
 volumeControl.addEventListener('input', () => {
     bgMusic.volume = volumeControl.value / 100;
 });
 
-// ✅ PINAKA-IMPORTANTE: PAG PINDOT NG READ IT → KUSANG TUTUNOG
+// ✅ PAG PINDOT NG READ IT → KUSANG TUTUNOG
 function showLetter() {
-    // ✅ KUSANG TUTUNOG DITO
     bgMusic.play().then(() => {
         musicToggle.textContent = "🔊 ON";
     }).catch(err => {
-        alert('Siguroduhing ang pangalan ng kanta ay: captivated.mp3');
+        alert('Siguraduhing ang pangalan ng kanta ay: captivated.mp3');
     });
 
     document.getElementById("introText").style.opacity = 0;

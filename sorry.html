@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A Sorry Letter for You Han han</title>
+  <link rel="stylesheet" href="sorry.css" />
+</head>
+<body>
+
+  <!-- 🎵 MUSIC CONTROLS - TAMA NA PAGKAKALAGAY -->
+  <div class="music-controls">
+    <audio id="bgMusic" loop preload="auto">
+      <!-- ✅ INAYOS KO ANG PANGALAN, SIGURADUHIN MONG GANITO ANG PANGALAN NG FILE MO -->
+      <source src="captivated.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    
+    <button class="music-btn" id="musicToggle">🔇 OFF</button>
+    <input type="range" id="volumeControl" min="0" max="100" value="50" class="volume-slider">
+  </div>
+
+  <div class="intro" id="introText">
+    i hope you read this, even if it's too late han.
+  </div>
+
+  <button class="btn" onclick="showLetter()">Read it Han han</button>
+
+  <div class="letter" id="letterBox">
+    <p id="typedText"></p>
+    <img src="nailong.png" alt="Signature" class="signature" />
+  </div>
+
+  <script src="sorry.js"></script>
+</body>
+</html>
